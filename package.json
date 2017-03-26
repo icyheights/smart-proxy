@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "co": "^4.6.0",
+    "http-proxy": "^1.16.2",
     "node-fetch": "^1.6.3"
   }
 }
