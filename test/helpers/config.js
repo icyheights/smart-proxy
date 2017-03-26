@@ -3,11 +3,13 @@
 module.exports = {
   ratelimiter: {
     host: 'localhost',
-    port: 31338
+    port: 31338,
+    timeout: 100
   },
   target: {
     ip: '127.0.0.1',
     port: 31339,
+    timeout: 100,
     reply: 'test target reply'
   },
   RATELIMITER_ALLOW_STATUS: 200,

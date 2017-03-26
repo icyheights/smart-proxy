@@ -5,7 +5,7 @@
  * which is defined in app.locals
  *
  * when actions end handler will stop responding
- * 
+ *
  * @param countProp - app.locals property that counts requests
  * @param actionsProp - app.locals property that defines array of actions
  */

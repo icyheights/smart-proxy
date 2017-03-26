@@ -22,6 +22,7 @@
   "homepage": "https://github.com/icyheights/smart-proxy#readme",
   "devDependencies": {
     "ava": "^0.18.2",
+    "express": "^4.15.2",
     "sinon": "^2.1.0",
     "snazzy": "^6.0.0",
     "supertest": "^3.0.0"

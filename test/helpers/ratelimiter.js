@@ -33,7 +33,7 @@ app.locals.countReplyOrder = [
   res => res.status(testConfig.RATELIMITER_COUNT_OK_STATUS).end(),
   res => res.redirect(303, '/test'),
   res => res.status(400).end(),
-  res => res.status(500).end(),
+  res => res.status(500).end()
 ]
 app.post('/count', createHandler('countRequestCount', 'countReplyOrder'))
 
