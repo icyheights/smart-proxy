@@ -13,8 +13,8 @@ module.exports = function (ratelimiter, config, logger) {
   })
 
   proxy.on('proxyRes', targetResponse => {
-    const { status } = targetResponse
-    if (status < 300 && status >= 200) {
+    const { statusCode } = targetResponse
+    if (statusCode < 300 && statusCode >= 200) {
       ratelimiter.count()
     }
   })

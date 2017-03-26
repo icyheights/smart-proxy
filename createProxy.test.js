@@ -8,8 +8,8 @@ const testConfig = require('./test/helpers/config')
 test('proxy counts 2xx replies', t => {
   const ratelimiterMock = { count: sinon.spy() }
   const loggerMock = { log () {} }
-  const response200Mock = { status: 200 }
-  const response299Mock = { status: 299 }
+  const response200Mock = { statusCode: 200 }
+  const response299Mock = { statusCode: 299 }
 
   const proxy = createProxy(ratelimiterMock, testConfig, loggerMock)
   proxy.emit('proxyRes', response200Mock)
