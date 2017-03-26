@@ -6,7 +6,9 @@ module.exports = {
     port: 31338
   },
   target: {
-    ip: '127.0.0.1'
+    ip: '127.0.0.1',
+    port: 31339,
+    reply: 'test target reply'
   },
   RATELIMITER_ALLOW_STATUS: 200,
   RATELIMITER_DENY_STATUS: 429,
