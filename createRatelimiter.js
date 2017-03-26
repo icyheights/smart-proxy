@@ -3,7 +3,7 @@
 const co = require('co')
 
 const DEFAULT_TIMEOUT = 1000
-const REDIRECT_ACTION = 'error' // see node-fetch doc for other options
+const REDIRECT_ACTION = 'manual' // see node-fetch doc for other options
 
 function sendStatus (response, status) {
   response.writeHead(status)
